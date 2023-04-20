@@ -1,9 +1,9 @@
 /* Файл с путями */
 // Получаем имя папки проекта
-import * as nodePath from 'path';
+import * as nodePath from "path";
 const rootFolder = nodePath.basename(nodePath.resolve());
 
-const buildFolder = `./dist`; //путь к папке с результатом
+const buildFolder = `./public`; //путь к папке с результатом
 const srcFolder = `./src`; //путь к папке с исходниками
 
 export const path = {
@@ -13,7 +13,7 @@ export const path = {
         html: `${buildFolder}/`,
         images: `${buildFolder}/img/`,
         fonts: `${buildFolder}/fonts`,
-        files: `${buildFolder}/files/`
+        files: `${buildFolder}/files/`,
     },
     /* Пути исходных файлов */
     src: {
@@ -30,11 +30,11 @@ export const path = {
         scss: `${srcFolder}/scss/**/*.scss`,
         html: `${srcFolder}/**/*.html`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
-        files: `${srcFolder}/files/**/*.*`
+        files: `${srcFolder}/files/**/*.*`,
     }, //за какими файлами следит
     clean: buildFolder,
     buildFolder: buildFolder,
     srcFolder: srcFolder,
     rootFolder: rootFolder,
-    ftp: `www/test.webdev2022.ru` // путь куда загружать проект (тестовый сервер)
+    ftp: `www/test.webdev2022.ru`, // путь куда загружать проект (тестовый сервер)
 };
