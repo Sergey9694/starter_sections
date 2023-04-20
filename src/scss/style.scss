@@ -1,59 +1,158 @@
 @import "fonts";
+@import "media";
 
 * {
-    margin: 0 auto;
     box-sizing: border-box;
 }
 
-section {
-    max-width: 1440px;
-}
-
 .development {
+    max-width: 1440px;
+    margin: 0 auto;
     min-height: 873px;
     background: #f9f9fa;
     padding: 80px 105px;
-    &-block {
+
+    &__subtitle {
+        font-family: OpenSans_Condensed;
+        font-weight: 800;
+        font-size: 12px;
+        text-align: center;
+        text-transform: uppercase;
+        background: linear-gradient(90deg, #4343ff 0%, #f96d6d 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    h1 {
+        padding: 22px 230px;
+        font-family: GalanoGrotesque;
+        font-size: 46px;
+        text-align: center;
+        color: #110c11;
+        margin-bottom: 80px;
+    }
+
+    &__block {
         display: grid;
-        grid-template-columns: repeat(3, minmax(auto, 387px));
+        grid-template-columns: repeat(auto-fill, 381px);
         grid-template-rows: repeat(2, minmax(225px, auto));
         gap: 35px;
-        &__item {
-            background: #ffffff;
-            padding: 22px;
-        }
-        &__title {
-            font-family: OpenSans;
-            font-weight: 700;
-            font-size: 17px;
-            padding-bottom: 28px;
-            text-transform: uppercase;
-        }
-        &__descr {
-            font-family: OpenSans;
-            font-size: 17px;
-            color: #5c5c5c;
-        }
+    }
+
+    &__item {
+        background: #ffffff;
+        padding: 22px;
+    }
+
+    &__title {
+        font-family: OpenSans;
+        font-weight: 700;
+        font-size: 17px;
+        padding-bottom: 28px;
+        text-transform: uppercase;
+    }
+
+    &__descr {
+        font-family: OpenSans;
+        font-size: 17px;
+        color: #5c5c5c;
     }
 }
 
-.subtitle {
-    margin-bottom: 22px;
-    font-family: OpenSans_Condensed;
-    font-weight: 800;
-    font-size: 12px;
-    text-align: center;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #4343ff 0%, #f96d6d 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
+.conditions {
+    margin: 0 auto;
+    max-width: 1440px;
+    margin-top: 130px;
+    padding: 60px 220px 60px 135px;
+    min-height: 522px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 470px 270px 270px;
+        grid-template-rows: repeat(2, minmax(196px, auto));
 
-h1 {
-    font-family: GalanoGrotesque;
-    font-size: 46px;
-    text-align: center;
-    color: #110c11;
-    margin-bottom: 80px;
+        #first {
+            grid-column: 1/2;
+            grid-row: 1/3;
+            margin-right: 60px;
+            padding: 0;
+            background: #ffffff;
+            text-align: left;
+        }
+        #two {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            margin-right: 15px;
+        }
+        #three {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            margin-top: 15px;
+            margin-right: 15px;
+        }
+        #four {
+            grid-column: 3;
+            grid-row: 1/3;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 22px;
+        text-align: center;
+        border-radius: 5px;
+        background: #ededed;
+
+        h2 {
+            font-family: RobotoCondensed;
+            color: #56565a;
+            font-size: 36px;
+            padding-bottom: 15px;
+            margin-left: -2px;
+        }
+        &__descr {
+            font-family: Source Sans Pro;
+            color: #56565a;
+            font-size: 16px;
+            padding-bottom: 30px;
+        }
+
+        svg {
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-family: Source Sans Pro;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        hr {
+            display: block;
+            width: 170px;
+            border: 1px solid #e5e5e5;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+
+        &__descr {
+            font-family: Source Sans Pro;
+            font-size: 14px;
+            color: #56565a;
+        }
+        &__buttons {
+            margin-left: 0;
+            button {
+                width: 131px;
+                height: 44px;
+                background: #0a467e;
+                border: none;
+                font-size: 16px;
+                color: #ffffff;
+            }
+        }
+    }
 }
+@import "media";

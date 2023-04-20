@@ -1,0 +1,317 @@
+@font-face {
+  font-family: GalanoGrotesque;
+  font-display: swap;
+  src: url("../fonts/GalanoGrotesque-Medium.woff2") format("woff2"), url("../fonts/GalanoGrotesque-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat.woff2") format("woff2"), url("../fonts/Montserrat.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvetica Neue;
+  font-display: swap;
+  src: url("../fonts/Helvetica Neue.woff2") format("woff2"), url("../fonts/Helvetica Neue.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans_Condensed;
+  font-display: swap;
+  src: url("../fonts/OpenSans_Condensed-ExtraBold.woff2") format("woff2"), url("../fonts/OpenSans_Condensed-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  font-display: swap;
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: source;
+  font-display: swap;
+  src: url("../fonts/source-sans-pro.woff2") format("woff2"), url("../fonts/source-sans-pro.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Source Sans Pro;
+  font-display: swap;
+  src: url("../fonts/Source Sans Pro.woff2") format("woff2"), url("../fonts/Source Sans Pro.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@media (max-width: 575px) {
+  .development {
+    padding: 10px;
+  }
+  .development h1 {
+    font-size: 20px;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  .development__block {
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .development {
+    padding: 10px;
+  }
+  .development h1 {
+    font-size: 30px;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  .development__block {
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 252px);
+  }
+}
+@media (max-width: 991px) {
+  .development {
+    padding: 10px;
+  }
+  .development h1 {
+    font-size: 33px;
+    padding: 40px;
+    margin-bottom: 30px;
+  }
+  .development__block {
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 281px);
+  }
+}
+@media (max-width: 1200px) {
+  .development {
+    padding: 50px;
+  }
+  .development h1 {
+    font-size: 30px;
+    padding: 22px 43px;
+    margin-bottom: 30px;
+  }
+  .development__block {
+    grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+  }
+}
+@media (max-width: 1400px) {
+  .development__block {
+    grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+.development {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 873px;
+  background: #f9f9fa;
+  padding: 80px 105px;
+}
+.development__subtitle {
+  font-family: OpenSans_Condensed;
+  font-weight: 800;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #4343ff 0%, #f96d6d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.development h1 {
+  padding: 22px 230px;
+  font-family: GalanoGrotesque;
+  font-size: 46px;
+  text-align: center;
+  color: #110c11;
+  margin-bottom: 80px;
+}
+.development__block {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 381px);
+  grid-template-rows: repeat(2, minmax(225px, auto));
+  gap: 35px;
+}
+.development__item {
+  background: #ffffff;
+  padding: 22px;
+}
+.development__title {
+  font-family: OpenSans;
+  font-weight: 700;
+  font-size: 17px;
+  padding-bottom: 28px;
+  text-transform: uppercase;
+}
+.development__descr {
+  font-family: OpenSans;
+  font-size: 17px;
+  color: #5c5c5c;
+}
+
+.conditions {
+  margin: 0 auto;
+  max-width: 1440px;
+  margin-top: 130px;
+  padding: 60px 220px 60px 135px;
+  min-height: 522px;
+}
+.conditions__wrapper {
+  display: grid;
+  grid-template-columns: 470px 270px 270px;
+  grid-template-rows: repeat(2, minmax(196px, auto));
+}
+.conditions__wrapper #first {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  margin-right: 60px;
+  padding: 0;
+  background: #ffffff;
+  text-align: left;
+}
+.conditions__wrapper #two {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-right: 15px;
+}
+.conditions__wrapper #three {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+.conditions__wrapper #four {
+  grid-column: 3;
+  grid-row: 1/3;
+}
+.conditions__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+  text-align: center;
+  border-radius: 5px;
+  background: #ededed;
+}
+.conditions__container h2 {
+  font-family: RobotoCondensed;
+  color: #56565a;
+  font-size: 36px;
+  padding-bottom: 15px;
+  margin-left: -2px;
+}
+.conditions__container__descr {
+  font-family: Source Sans Pro;
+  color: #56565a;
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+.conditions__container svg {
+  margin-bottom: 10px;
+}
+.conditions__container h3 {
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.conditions__container hr {
+  display: block;
+  width: 170px;
+  border: 1px solid #e5e5e5;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.conditions__container__descr {
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  color: #56565a;
+}
+.conditions__container__buttons {
+  margin-left: 0;
+}
+.conditions__container__buttons button {
+  width: 131px;
+  height: 44px;
+  background: #0a467e;
+  border: none;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+@media (max-width: 575px) {
+  .development {
+    padding: 10px;
+  }
+  .development h1 {
+    font-size: 20px;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  .development__block {
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .development {
+    padding: 10px;
+  }
+  .development h1 {
+    font-size: 30px;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  .development__block {
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 252px);
+  }
+}
+@media (max-width: 991px) {
+  .development {
+    padding: 10px;
+  }
+  .development h1 {
+    font-size: 33px;
+    padding: 40px;
+    margin-bottom: 30px;
+  }
+  .development__block {
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 281px);
+  }
+}
+@media (max-width: 1200px) {
+  .development {
+    padding: 50px;
+  }
+  .development h1 {
+    font-size: 30px;
+    padding: 22px 43px;
+    margin-bottom: 30px;
+  }
+  .development__block {
+    grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+  }
+}
+@media (max-width: 1400px) {
+  .development__block {
+    grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+  }
+}
